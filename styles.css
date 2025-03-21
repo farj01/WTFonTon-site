@@ -1,0 +1,52 @@
+
+body.dark-mode {
+    background-color: #111;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background: linear-gradient(to right, #0f0f0f, #1c1c1c);
+}
+
+.spinning-logo {
+    width: 150px;
+    height: auto;
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: #222;
+}
+
+nav ul li {
+    margin: 10px 15px;
+}
+
+nav ul li a {
+    color: #0ff;
+    text-decoration: none;
+}
+
+section {
+    padding: 30px 20px;
+    border-bottom: 1px solid #444;
+}
+
+footer {
+    background: #222;
+    padding: 20px;
+}
