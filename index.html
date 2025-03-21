@@ -1,61 +1,164 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WTFonTON - What The Fun Meme Coin</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WTFonTon Memecoin - The craziest fun on TON Blockchain">
+  <title>WTFonTon - The Funniest Memecoin on TON</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap">
+  <style>
+    body {
+      margin: 0;
+      background: #0b0c10;
+      font-family: 'Orbitron', sans-serif;
+      color: #fff;
+    }
+    header {
+      padding: 20px;
+      background: #1f2833;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      color: #66fcf1;
+      font-size: 2rem;
+    }
+    nav a {
+      margin-left: 20px;
+      color: #c5c6c7;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #66fcf1;
+    }
+    .hero {
+      background: url("bg.gif") no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .section h3 {
+      color: #66fcf1;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .tokenomics, .community {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    footer {
+      background: #1f2833;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+    .socials a {
+      color: #66fcf1;
+      margin: 0 10px;
+      font-size: 1.2rem;
+    }
+    .animated-image {
+      width: 180px;
+      margin: 20px auto;
+      display: block;
+      animation: pulse 3s infinite ease-in-out;
+    }
+    .buy-button {
+      background-color: #66fcf1;
+      border: none;
+      color: #0b0c10;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    .buy-button:hover {
+      background-color: #45a29e;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+  </style>
 </head>
-<body class="dark-mode">
-    <header>
-        <div class="logo-container">
-            <img src="logo.gif" alt="WTFonTON 3D Logo" class="spinning-logo">
-        </div>
-        <h1>WTFonTON - What The Fun</h1>
-        <p class="tagline">Fun has no rules. Chaos is the new crypto.</p>
-        <audio autoplay loop>
-            <source src="theme.mp3" type="audio/mpeg">
-        </audio>
-    </header>
 
+<body>
+  <header>
+    <h1>WTFonTon</h1>
     <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#tokenomics">Tokenomics</a></li>
-            <li><a href="#roadmap">Roadmap</a></li>
-            <li><a href="#community">Community</a></li>
-        </ul>
+      <a href="#about">About</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#community">Community</a>
+      <a href="#socials">Socials</a>
     </nav>
+  </header>
 
-    <section id="about">
-        <h2>About $WTF</h2>
-        <p>$WTF – What The Fun Coin is not just a meme coin. It’s a chaotic movement of fun, laughter, and internet madness. Every meme, every post, every moment that makes you say “WTF” is fuel for this community-driven token.</p>
-    </section>
+  <section class="hero">
+    <h2>The Craziest Memecoin on TON</h2>
+    <p>Join the WTF movement — where memes meet madness on the TON blockchain. 1 Billion Supply. Zero Chill.</p>
+    <img src="frog-wtf.png" alt="WTF Frog" class="animated-image">
+    <button class="buy-button" onclick="window.open('https://example.com/buy-token', '_blank')">Buy WTF Token</button>
+  </section>
 
-    <section id="tokenomics">
-        <h2>Tokenomics</h2>
-        <p>Total Supply: 1,000,000,000 $WTF</p>
-    </section>
+  <section class="section" id="about">
+    <h3>What is WTFonTon?</h3>
+    <p>WTFonTon is a meme-driven token built for chaos, fun, and community hype on the TON blockchain. Inspired by internet culture and powered by collective energy, it’s a hilarious rollercoaster you don’t want to miss!</p>
+  </section>
 
-    <section id="roadmap">
-        <h2>Roadmap</h2>
-        <ul>
-            <li>Q1: Launch on TON & Meme Domination</li>
-            <li>Q2: Meme Army Expansion & Viral Marketing</li>
-            <li>Q3: Ecosystem Growth - WTF Merch, Meme DAO</li>
-            <li>Q4: Global Meme Takeover - IRL Meme Events</li>
-        </ul>
-    </section>
+  <section class="section" id="tokenomics">
+    <h3>Tokenomics</h3>
+    <div class="tokenomics">
+      <p>Total Supply: <strong>1,000,000,000 WTF</strong></p>
+      <p>10% for Marketing & Team • 90% for Community & Launch Pool</p>
+      <p>Liquidity Locked • Ownership Renounced • Fair Launch</p>
+    </div>
+  </section>
 
-    <section id="community">
-        <h2>Join the Community</h2>
-        <p><a href="https://x.com/WhatTheFunTON">Follow us on Twitter</a></p>
-        <p><a href="https://t.me/WTFarmyTon">Join Telegram Community</a></p>
-    </section>
+  <section class="section" id="community">
+    <h3>Join The Army</h3>
+    <div class="community">
+      <p>The WTF Army is growing — join us in the madness. Memes, giveaways, surprises and airdrops await you. Let’s take this to the moon together!</p>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 WTFonTON. All Rights Reserved.</p>
-    </footer>
+  <section class="section" id="socials">
+    <h3>Follow Us</h3>
+    <div class="socials">
+      <a href="https://x.com/WhatTheFunTON?t=e7JjrySN356b4s-WMhQ7FQ&s=09" target="_blank">Twitter</a>
+      <a href="https://t.me/WTFarmyTon" target="_blank">Telegram</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 WTFonTon. Made for fun, not financial advice.
+  </footer>
 </body>
 </html>
